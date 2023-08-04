@@ -16,14 +16,21 @@ const forward2=document.querySelector('.forward2')
 //bouton backward one
 const backward1=document.querySelector('.backward1')
 const backward2=document.querySelector('.backward2')
+//
+const c2=document.querySelector('.c2');
+const c3=document.querySelector('.c3');
+const c1=document.querySelector('.c1');
 //fonction aparution page 1
 
 // fonction bouton forward
 document.getElementById("backward1").addEventListener("click",affichagePremierePage);
+document.getElementById("firstPage").addEventListener("click",affichagePremierePage)
 document.ge
 function affichagePremierePage(){
-    if(document.getElementById("backward1")){
-        c1.style.color="gainsbord"
+    if(document.getElementById("backward1") || document.getElementById("firstPage")){
+        //cercle couleur
+        //
+        c2.style.color="gainsboro"
         c3.style.color='gainsboro';
 
         image_1.style.display="block";
@@ -40,9 +47,7 @@ function affichagePremierePage(){
 document.getElementById("suivant11").addEventListener("click",Suivant);
 document.getElementById("suivant1").addEventListener("click",Suivant);
 document.getElementById("backward2").addEventListener("click",Suivant);
-const c2=document.querySelector('.c2');
-const c3=document.querySelector('.c3');
-const c1=document.querySelector('.c1');
+
 function Suivant(){
     if(document.getElementById("suivant1") || document.getElementById("suivant11") || document.getElementById(backward2) ){
         c2.style.color="gray"
@@ -63,7 +68,7 @@ document.getElementById("cercle_3").addEventListener("click",affichageDernierePa
 document.getElementById("forward2").addEventListener("click",affichageDernierePage)
 function affichageDernierePage(){
     if(document.getElementById("cercle_3") || document.getElementById("forward2")){
-        c1.style.color="black"
+        // c1.style.color="black"
         c2.style.color="gray"
         c3.style.color="gray"
         image_1.style.display="none";

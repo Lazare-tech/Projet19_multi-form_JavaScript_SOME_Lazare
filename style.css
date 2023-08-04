@@ -34,6 +34,11 @@
         flex-direction: column;
     }
 }
+@media (max-width:320px){
+    .pl{
+        font-size: 0.4rem !important;
+    }
+}
 /* }
 @media (max-width:4){
     
@@ -204,6 +209,22 @@ a{
     flex: 50%;
     margin: 5px;
 
+
+  }
+  .flex-item-left_b {
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin: 5px;
+    flex: 50%;
+  }
+  
+  .flex-item-right_s {
+    background-color: green;
+    padding: 10px;
+    flex: 50%;
+    margin: 5px;
+
+
   }
   .backward1,.forward2,.forward,.backward2,.submit{
       color: black;
@@ -211,3 +232,4 @@ a{
   .c2,.c3{
       color:gainsboro;
   }
+  
