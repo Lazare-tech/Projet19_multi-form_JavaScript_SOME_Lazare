@@ -38,6 +38,16 @@
     .pl{
         font-size: 0.4rem !important;
     }
+    h2{
+        font-family: "Muli-SemiBold";
+        font-size: 15px !important;
+        color: #453e79;
+        text-transform: uppercase;
+        letter-spacing: 7px;
+        padding: 5px 15px;
+        display: inline-block;
+        border: 1px solid #dad8e4;
+    }
 }
 /* }
 @media (max-width:4){
@@ -232,4 +242,3 @@ a{
   .c2,.c3{
       color:gainsboro;
   }
-  
