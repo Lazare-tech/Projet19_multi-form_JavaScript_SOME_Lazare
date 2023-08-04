@@ -188,6 +188,7 @@ a{
     font-size: 10px;
     text-align: center;
     
+    
   }
   
   .flex-item-left {
@@ -203,4 +204,10 @@ a{
     flex: 50%;
     margin: 5px;
 
+  }
+  .backward1,.forward2,.forward,.backward2,.submit{
+      color: black;
+  }
+  .c2,.c3{
+      color:gainsboro;
   }

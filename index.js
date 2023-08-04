@@ -11,38 +11,68 @@ const title=document.querySelector('h2')
 const form_1=document.querySelector('.form_one');
 const form_2=document.querySelector('.form_two');
 const form_3=document.querySelector('.form_three')
+//bouton forward 
+const forward2=document.querySelector('.forward2')
+//bouton backward one
+const backward1=document.querySelector('.backward1')
+const backward2=document.querySelector('.backward2')
+//fonction aparution page 1
 
-cercle_1.addEventListener('click', () => {
-    image_1.style.display="block";
-    image_2.style.display="none"
-    image_3.style.display="none"
-    //  formulaire
-    form_1.style.display="block";
-    form_2.style.display="none";
-    form_3.style.display="none";
-})
-cercle_2.addEventListener('click', () => {
-    console.log('yes')
-    // images
-    image_1.style.display="none";
-    image_2.style.display="block"
-    image_3.style.display="none";
-    // formualire
+// fonction bouton forward
+document.getElementById("backward1").addEventListener("click",affichagePremierePage);
+document.ge
+function affichagePremierePage(){
+    if(document.getElementById("backward1")){
+        c1.style.color="gainsbord"
+        c3.style.color='gainsboro';
+
+        image_1.style.display="block";
+        image_2.style.display="none"
+        image_3.style.display="none";
+        // formualire
+        form_1.style.display="block";
+        form_2.style.display="none";
+        form_3.style.display="none";  
+    }
+}
+//fonction apuration de la page 2
+// declaration des varibales
+document.getElementById("suivant11").addEventListener("click",Suivant);
+document.getElementById("suivant1").addEventListener("click",Suivant);
+document.getElementById("backward2").addEventListener("click",Suivant);
+const c2=document.querySelector('.c2');
+const c3=document.querySelector('.c3');
+const c1=document.querySelector('.c1');
+function Suivant(){
+    if(document.getElementById("suivant1") || document.getElementById("suivant11") || document.getElementById(backward2) ){
+        c2.style.color="gray"
+        c3.style.color='gainsboro';
+        //
+        image_1.style.display="none";
+        image_2.style.display="block"
+        image_3.style.display="none";
+        // formualire
+        form_1.style.display="none";
+        form_2.style.display="block";
+        form_3.style.display="none";
+    }
+}
+//fonction apparution de la page 3
+//declaration des variables
+document.getElementById("cercle_3").addEventListener("click",affichageDernierePage)
+document.getElementById("forward2").addEventListener("click",affichageDernierePage)
+function affichageDernierePage(){
+    if(document.getElementById("cercle_3") || document.getElementById("forward2")){
+        c1.style.color="black"
+        c2.style.color="gray"
+        c3.style.color="gray"
+        image_1.style.display="none";
+        image_2.style.display="none"
+        image_3.style.display="block"
+    // formulaire
     form_1.style.display="none";
-    form_2.style.display="block";
-    form_3.style.display="none";
-
-    // image_2.classList.toggle('form-row_show')
-   
-})
-cercle_3.addEventListener('click', () => {
-    image_1.style.display="none";
-    image_2.style.display="none"
-    image_3.style.display="block"
-// formulaire
-form_1.style.display="none";
-form_2.style.display="none";
-form_3.style.display="block";
-    
-   
-})
+    form_2.style.display="none";
+    form_3.style.display="block";
+        
+    }
+}
