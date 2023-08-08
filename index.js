@@ -21,7 +21,6 @@ const c2=document.querySelector('.c2');
 const c3=document.querySelector('.c3');
 const c1=document.querySelector('.c1');
 //fonction aparution page 1
-
 // fonction bouton forward
 document.getElementById("backward1").addEventListener("click",affichagePremierePage);
 document.getElementById("firstPage").addEventListener("click",affichagePremierePage)
@@ -81,3 +80,4 @@ function affichageDernierePage(){
         
     }
 }
+
